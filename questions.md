@@ -18,11 +18,9 @@
 
 - What is the Point of Infinity? What curve operation produces the point of Infinity? Is it useful in real life crypto implementation?
 
-
 ## Week 2 : Chapter 3 (Elliptic Curve Cryptography)
 
 - What are elliptic curves over finite fields, and how do they differ from normal elliptic curves? Are there any changes in properties between an Elliptic Curve over Finite Fields and Real Numbers?
-
 
 - What is the Discrete Log Problem, and why is it important in Cryptography? What does it mean when we say "DLP is hard"? What would have happened if DLP wasn't a "hard" problem?
 
@@ -32,13 +30,13 @@
 
 - What is the generator point, and how is it determined for a specific curve? Is it chosen randomly? Why did Satoshi choose secp256k1 for Bitcoin?
 
-- What are Private Keys and Public Keys in the context of elliptic curves? Can you briefly explain the process of generating Private and Public Keys? Is it possible to accidentally arrive at the same Public Key point with different private keys?
+- What are Private Keys and Public Keys in the context of elliptic curves? Can you briefly explain the process of generating Private and Public Keys?
 
 - What are Public Key additions, and what is the result of adding two public keys? Where can the addition of keys be useful?
 
 - What is a Digital Signature, and what is its purpose? What does a Digital Signature ultimately prove? How many different types of Digital Signature algorithms are known, with ECDSA being one of them?
 
-- How are ECDSA signatures malleable? Can you provide a brief description of the Signature Creation and Verification algorithms? Which one takes more time? Bonus: Can you give a real example of the average time taken on your machine for a single ECDSA creation and verification?
+- Can you provide a brief description of the Signature Creation and Verification algorithms? Which one takes more time? Bonus: Can you give a real example of the average time taken on your machine for a single ECDSA creation and verification?
 
 - Why is it important to have a "unique K"? What vulnerabilities can be exploited if K is known to be reused? Can you provide a real-life example of when such an exploit occurred?
 
@@ -47,9 +45,10 @@
 - What is the Wallet Import Format (WIF) used for, and how is it generated from a private key?
 
 - How is the compressed SEC format serialised for a point P = (x,y)?
+
 - Briefly outline the process of creating a Bitcoin address. Which hash operation is used, and what is the purpose of the checksum?
 
-- How does Base58 encoding address some of the potential issues or limitations of Base64 encoding?
+- How does Base58 encoding addresses some of the potential issues or limitations of Base64 encoding?
 
 - Explain DER signature encoding with an example.
 
@@ -63,10 +62,9 @@
 
 - Why was the original idea for using the sequence and locktime fields for "high-frequency trades" considered insecure?
 
+## Week 4: Chapter 6 (Script) + Chapter 7 (Transaction creation)
 
-## Week 4: Chhapter 6 (Script) + Chapter 7 (Transaction creation)
-
-- Highlight the differences between native segwit and nested segwit? Which is better? Why native segwit came into the picture instead of just nested segwit? Discuss script execution of nested segwit scripts.
+- Highlight the differences between native segwit and nested segwit? Which is better? Why nested segwit was required? Discuss script execution of nested segwit scripts.
 
 - What are the differences between P2SH and P2WSH? Which is better in terms of security and why?
 
@@ -82,10 +80,9 @@
 
 - Discuss different Sighash types along with their usecases. Which part of the transaction is hashed in each sighash type?
 
-- Why do we encode addresses in base58 instead of base64? Discuss advantages of bech32 over base58 encoding format. How is bech32m better than bech32?
+- Why do we encode addresses in base58 instead of base64? Discuss advantages of bech32 over base58 encoding format. 
 
 - What are different sources of transaction malleability and how did the segwit upgrade fix it?
-
 
 ## Week 5: Chapter 8 (P2SH) + Chapter 9 (Blocks)
 
