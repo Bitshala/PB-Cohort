@@ -108,11 +108,11 @@
 
 ## Week 6: Chapter 10 (Networking) + Chapter 11 (SPV)
 
-- Describe the structure of a network message. What does the field imply?
+- Describe the structure of a `tx` message. What does the fields imply?
 
 - Describe the process of network handshake. What information is propagated in the handshake message? Why is this information needed to establish a connection?
 
-- Every network message has a different payload structure. You can refer to this link for a comprehensive list. Explain the payload structure in the get headers message.
+- Every network message has a different payload structure. You can refer to this [link](https://en.bitcoin.it/wiki/Protocol_documentation#Message_types) for a comprehensive list. Explain the payload structure in the `getheaders` message.
 
 - Why is the parsed timestamp field from a version message 8 bytes (as opposed to 4 bytes in the block header)?
 
@@ -122,11 +122,9 @@
 
 - What is a Merkle tree? Describe the process of finding the merkle root from a set of leaves.
 
-- What does the Merkle tree data structure achieve in terms of provability? What places in the Bitcoin protocol is it used?
+- What does the Merkle tree data structure achieve in terms of provability? What parts of the Bitcoin protocol it is used?
 
 - How is the Merkle tree data included in a block? What does a node use this data for?
-
-- Why was the original SPV idea by Satoshi in his white paper never worked out? What is the current solution for SPV? (hint: BIP157/158).
 
 ## Week 7: Chapter 12 (Bloom Filters) + Chapter 13 (Segwit)
 
@@ -140,13 +138,12 @@
 
 - Can you provide practical examples of wallets that use Bloom Filters? Additionally, what are some examples of BIP157 Filters?
 
-- Provide a brief description of the SegWit upgrade. Why is it called Segregated Witness?
+- What was the major changes introduced in the Segwit upgrade? Why is it called Segregated Witness?
 
-- Define transaction malleability. Explain how SegWit addresses and fixes transactional malleability. Why was it important to fix this issue?
+- Define transaction malleability. Explain how SegWit fixes transactional malleability. Why was it important to fix this issue?
 
 - What are the two major SegWit address types, and what is the main difference between them?
 
-- Explain the concept of a nested SegWit address. What is the mechanism for validating a P2SH-P2WPKH script, and why was nested SegWit required?
+- Explain the concept of a nested SegWit address. why was nested SegWit required?
 
-- Was the SegWit upgrade a soft fork or hard fork? Additionally, why was there controversy surrounding the SegWit upgrade?
-
+- How was Segwit activated as a soft fork? How would non-segwit nodes process a Segwit transaction?
